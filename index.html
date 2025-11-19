@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./javascript/pig.js" defer></script>
+    <link rel="stylesheet" href="./css/pigstyle.css" />
+    <title>Pig</title>
+  </head>
+  <body>
+    <div id="pigprogress" class="hide"></div>
+    <main id="formbox" class="flexcol">
+      <h3>Enter a pig name and click the snout!</h3>
+      <form id="form" class="flexrow">
+        <input type="text" placeholder="Piggyname" />
+        <button id="submitname">🐽</button>
+      </form>
+    </main>
+    <div id="scorediv" class="hide">
+      <h2 id="playername"></h2>
+      <h3 id="totalscore"></h3>
+      <h3 id="rounds"></h3>
+      <h3 id="roundscore"></h3>
+      <div id="dicediv" class=""></div>
+      <div class="flexrow">
+        <button id="rollbtn">Roll</button>
+        <button id="staybtn">Stay</button>
+      </div>
+      <div id="rulediv">
+        <h1>Rules:</h1>
+        <p>
+          Pig is a simple dice game which in its basic form is playable with
+          just a single die. You win by getting your score to 100 or more
+          points.
+        </p>
+        <p>
+          If the die rolls a 1 your round is over, you lose all points you have
+          accumulated that round. You can stay when ever you want.
+        </p>
+      </div>
+    </div>
+    <div id="winningscreen" class="hide">
+      <div id="congratstext"></div>
+      <div><button id="newgame">New game!</button></div>
+    </div>
+  </body>
+</html>
