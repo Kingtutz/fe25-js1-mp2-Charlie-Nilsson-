@@ -11,8 +11,9 @@ const newGame = document.querySelector('#newgame')
 const progressBar = document.querySelector('#pigprogress')
 const congratsdiv = document.querySelector('#winningscreen')
 const congratsText = document.querySelector('#congratstext')
-const dieArr = ['one', 'two', 'three', 'four', 'five', 'six']
 
+
+const dieArr = ['one', 'two', 'three', 'four', 'five', 'six']
 let totalScore = 0
 let roundScore = 0
 let rounds = 0
@@ -26,11 +27,15 @@ function nameInput (event) {
   event.preventDefault()
   const playerName = form.querySelector('input').value
   console.log(playerName)
+
+
   formBox.classList.remove('flexcol')
   formBox.classList.add('hide')
   scoreDiv.classList.remove('hide')
   scoreDiv.classList.add('flexcol')
   document.querySelector('#playername').innerText = playerName
+
+
   roundNum.innerText = `rounds: ${rounds}`
   roundScoreText.innerText = `Round score: ${roundScore}`
   totalScoreEl.innerText = `Total score: ${totalScore}`
